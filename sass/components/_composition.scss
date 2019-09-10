@@ -1,0 +1,27 @@
+.composition {
+    
+    position: relative;
+
+    &__mission {
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+        border-radius: 2px;
+        position: absolute;
+        
+        &--txt {
+            background-color: $color-white;
+            height: 30vh;
+            top: 30;
+             left: 40%;
+             transform: translateX(-60%);
+        }
+
+        &--photo {
+            width: 60%;
+            left: 50rem;
+            top: 3rem;
+        }
+
+    }
+
+}
+

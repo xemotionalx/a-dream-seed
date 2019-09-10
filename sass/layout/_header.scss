@@ -1,0 +1,41 @@
+.header {
+    height: 70vh;
+    background-size: cover;
+    position: relative;
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    &__homepage {
+        @include header-bg("../images/headers/header_home.jpg", center);
+    }
+
+    &__about {
+        @include header-bg("../images/headers/header_about.jpg", center);
+    }
+
+    &__contact {
+        @include header-bg("../images/headers/header_contact.jpg", center right);
+    }
+
+    &__donate {
+        @include header-bg("../images/headers/header_donate.jpg", center right);
+    }
+
+    &__dreamers {
+        @include header-bg("../images/headers/header_dreamers.jpg", center right);
+    }
+
+    &__events {
+        @include header-bg("../images/headers/header_events.jpg", bottom);
+    }
+ 
+}
+
+

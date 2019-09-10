@@ -1,0 +1,36 @@
+.dreamers {
+    background-color: $color-gray-light-1;
+     padding: 5rem 0;
+     text-align: center;
+
+     &__featured-dreamer {
+        background-color: $color-white;
+     }
+ 
+     &__img {
+         height: 50rem;
+         @include default-box-shadow;
+     }
+ 
+     &__text {
+        height: 50rem;
+         background-color:white;
+         padding: 5rem;
+         @include default-box-shadow;
+     }
+ }
+ 
+ .past-dreamers {
+     background-color: $color-gray-light-1;
+     padding: 8rem 0;
+ }
+ 
+ .team-box {
+     @include default-box-shadow;
+         background-color: $color-white;
+     &__text {
+         display: block;
+         padding: 2rem 3rem;
+     }
+ 
+ }

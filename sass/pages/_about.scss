@@ -1,0 +1,55 @@
+.founder {
+   background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+    padding: 5rem 0;
+    text-align: center;
+
+    &__img {
+        width: 60%;
+        @include default-box-shadow;
+    }
+
+    &__text {
+        background-color:white;
+        padding: 5rem;
+        @include default-box-shadow;
+    }
+}
+
+.team {
+    background-color: $color-gray-light-1;
+    padding: 8rem 0;
+}
+
+.photo-box {
+
+    position: relative;
+
+    &__photo {
+        width: 100%;
+    }
+    
+    &__name{
+        color: $color-white;
+        font-family: $secondary-font-fam;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-secondary-dark, .8));
+        position: absolute;
+        bottom: 0;
+        transform: translateY(-50%);
+        z-index: 98;
+        width: 100%;
+        padding: .5rem;
+        text-align: center;
+    }
+}
+
+.team-box {
+    @include default-box-shadow;
+        background-color: $color-white;
+    &__text {
+        display: block;
+        padding: 2rem 3rem;
+    }
+
+}

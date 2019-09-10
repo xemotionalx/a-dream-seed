@@ -1,0 +1,55 @@
+.section-mission {
+    padding: 10rem;
+    background-color: $color-gray-light-1;
+
+    &__background {
+    background-image: linear-gradient(
+         to right, 
+        $color-primary, 
+        $color-secondary);
+
+        padding: 10rem 0;
+
+    height: 100vh;
+    padding: 15rem;
+    clip-path: polygon(0 20vh, 100% 0, 100% 80vh, 0 100%);
+    }
+
+    &__text {
+        color: $color-black;
+        font-size: 2rem;
+    }
+    
+    &__img {
+        width: 80%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: .3rem;
+    }
+}
+
+.section-about {
+   padding: 7rem 0;
+   background-color: $color-gray-light-1;
+    height: 95vh;
+}
+
+.section-events {
+    padding: 5rem 0 10rem 0;
+    background-color: $color-gray-light-1;
+    height: 100h;
+
+    &__background {
+        padding: 5rem 0;
+        height: 95vh;
+        background-image: 
+        linear-gradient(
+            to right bottom, 
+            rgba($color-primary, 0.7), 
+            rgba($color-secondary, 0.7)), 
+        url("../images/homepage/events_background.jpg");
+    background-size: cover;
+    background-position: bottom;
+    
+    clip-path: polygon(0 5vh, 100% 0, 100% 85vh, 0 100%);
+    }
+}

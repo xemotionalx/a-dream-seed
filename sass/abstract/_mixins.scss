@@ -1,0 +1,23 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin header-bg($img-URL, $position) {
+    background-image: 
+        linear-gradient(
+            to right bottom, 
+            rgba($color-primary, 0.7), 
+            rgba($color-secondary, 0.7)), 
+        url($img-URL);
+    background-position: $position;
+}
+
+@mixin default-box-shadow {
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    border-radius: 2px;
+    border-radius: 3px;
+}
