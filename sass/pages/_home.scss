@@ -1,30 +1,29 @@
 .section-mission {
-    padding: 10rem;
+    padding: 10rem 10rem 8rem 10rem;
     background-color: $color-gray-light-1;
-
-    &__background {
-    background-image: linear-gradient(
-         to right, 
-        $color-primary, 
-        $color-secondary);
-
-        padding: 10rem 0;
-
-    height: 100vh;
-    padding: 15rem;
-    clip-path: polygon(0 20vh, 100% 0, 100% 80vh, 0 100%);
-    }
+    height: 10vh;
 
     &__text {
-        color: $color-black;
-        font-size: 2rem;
+        color: $color-grey-dark-3;
+        font-size: 3rem;
+        font-weight: 400;
     }
+}
+
+.section-mission-img {
+
+    &__bg {
+        background-color: $color-gray-light-1;
+    }
+
+        background-image: 
+        url("../images/homepage/mission_bg_bw.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
     
-    &__img {
-        width: 80%;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-        border-radius: .3rem;
-    }
+        clip-path: polygon(0 50vh, 100% 30vh, 100% 100%, 0 100%);
+
 }
 
 .section-about {
@@ -50,6 +49,9 @@
     background-size: cover;
     background-position: bottom;
     
-    clip-path: polygon(0 5vh, 100% 0, 100% 85vh, 0 100%);
+    transform: skewY(-7deg);
+    & > * {
+        transform: skewY(7deg);
+    }
     }
 }

@@ -464,21 +464,22 @@ body {
     padding: 2rem 3rem; }
 
 .section-mission {
-  padding: 10rem;
-  background-color: #f7f7f7; }
-  .section-mission__background {
-    background-image: linear-gradient(to right, #aad400, #08769b);
-    padding: 10rem 0;
-    height: 100vh;
-    padding: 15rem;
-    clip-path: polygon(0 20vh, 100% 0, 100% 80vh, 0 100%); }
+  padding: 10rem 10rem 8rem 10rem;
+  background-color: #f7f7f7;
+  height: 10vh; }
   .section-mission__text {
-    color: #000;
-    font-size: 2rem; }
-  .section-mission__img {
-    width: 80%;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    border-radius: .3rem; }
+    color: #333;
+    font-size: 3rem;
+    font-weight: 400; }
+
+.section-mission-img {
+  background-image: url("../images/homepage/mission_bg_bw.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  clip-path: polygon(0 50vh, 100% 30vh, 100% 100%, 0 100%); }
+  .section-mission-img__bg {
+    background-color: #f7f7f7; }
 
 .section-about {
   padding: 7rem 0;
@@ -495,4 +496,6 @@ body {
     background-image: linear-gradient(to right bottom, rgba(170, 212, 0, 0.7), rgba(8, 118, 155, 0.7)), url("../images/homepage/events_background.jpg");
     background-size: cover;
     background-position: bottom;
-    clip-path: polygon(0 5vh, 100% 0, 100% 85vh, 0 100%); }
+    transform: skewY(-7deg); }
+    .section-events__background > * {
+      transform: skewY(7deg); }
